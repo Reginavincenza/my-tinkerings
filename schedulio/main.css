@@ -1,0 +1,78 @@
+* {
+    font-family: "Anonymous Pro", sans-serif;
+}
+
+body {
+    background-image: url("https://i.pinimg.com/1200x/f1/ad/f8/f1adf80363292301341ec29f05b8605b.jpg");
+    background-size: cover;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 1rem 0 0;
+    text-align: center;
+}
+
+.container {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+table.schedule {
+    width: 100%;
+    max-width: 1100px;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    background: rgba(0,0,0,0.45);
+    color: white;
+}
+
+.header_table {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: black;
+}
+
+th, td {
+    padding: 18px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.time-cell {
+    font-weight: 700;
+    width: 90px;
+    background: rgba(255,255,255,0.05);
+}
+
+.link {
+    color: beige;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: white;
+}
+
+footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 0.75rem 0;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    table.schedule { font-size: 14px; }
+    th, td { padding: 8px; }
+    .time-cell { display: none; }
+}
